@@ -8,9 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
-
-import javax.sql.DataSource;
 
 
 //@Import(MemoryConfig.class)
@@ -31,6 +28,7 @@ public class ItemServiceApplication {
 		return new TestDataInit(itemRepository);
 	}
 
+/*
 	@Bean
 	@Profile("test")
 	public DataSource dataSource() {
@@ -42,4 +40,5 @@ public class ItemServiceApplication {
 		dataSource.setPassword("");
 		return dataSource;
 	}
+*/
 }
