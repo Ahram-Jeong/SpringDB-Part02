@@ -10,14 +10,14 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Profile;
 
 
+@Slf4j
 //@Import(MemoryConfig.class)
 //@Import(JdbcTemplateV1Config.class)
 //@Import(JdbcTemplateV2Config.class)
 //@Import(JdbcTemplateV3Config.class)
 //@Import(MyBatisConfig.class)
-//@Import(JpaConfig.class)
-@Slf4j
-@Import(SpringDataJpaConfig.class)
+//@Import(SpringDataJpaConfig.class)
+@Import(QuerydslConfig.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
@@ -45,3 +45,6 @@ public class ItemServiceApplication {
 	}
 */
 }
+
+//@Import(JpaConfig.class)
+
